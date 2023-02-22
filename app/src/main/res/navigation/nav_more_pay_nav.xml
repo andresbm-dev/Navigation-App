@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_more_pay_nav"
+    app:startDestination="@id/loaderFragment">
+
+    <fragment
+        android:id="@+id/morePayFragment2"
+        android:name="com.abm.maasapp.ui.pay.MorePayFragment"
+        android:label="fragment_more_pay"
+        tools:layout="@layout/fragment_more_pay" />
+    <fragment
+        android:id="@+id/loaderFragment"
+        android:name="com.abm.maasapp.ui.pay.LoaderFragment"
+        android:label="fragment_loader"
+        tools:layout="@layout/fragment_loader" >
+        <action
+            android:id="@+id/action_loaderFragment_to_OTPMorePayFragment"
+            app:destination="@id/OTPMorePayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPMorePayFragment"
+        android:name="com.abm.maasapp.ui.otp.OTPMorePayFragment"
+        android:label="fragment_o_t_p_more_pay"
+        tools:layout="@layout/fragment_o_t_p_more_pay" >
+
+        <action
+            android:id="@+id/action_OTPMorePayFragment_to_morePayFragment2"
+            app:destination="@id/morePayFragment2"
+         />
+        <action
+            android:id="@+id/action_OTPMorePayFragment_to_nav_home_graph"
+            app:destination="@id/nav_home_graph"
+            app:popUpTo="@+id/nav_home_graph"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <include app:graph="@navigation/nav_home_graph" />
+</navigation>

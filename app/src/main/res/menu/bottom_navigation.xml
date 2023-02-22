@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home_graph"
+        android:icon="@drawable/home_selector"
+        android:title="" />
+
+    <item
+        android:id="@+id/nav_more_pay_nav"
+        android:icon="@drawable/more_pay_selectore"
+        android:title="" />
+
+    <item
+        android:id="@+id/nav_key_card_nav"
+        android:icon="@drawable/key_card_selector"
+        android:title="" />
+</menu>

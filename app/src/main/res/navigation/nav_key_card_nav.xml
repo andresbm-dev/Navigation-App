@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_key_card_nav"
+    app:startDestination="@id/keyCardFragment">
+
+    <fragment
+        android:id="@+id/keyCardFragment"
+        android:name="com.abm.maasapp.ui.key.KeyCardFragment"
+        android:label="fragment_key_card"
+        tools:layout="@layout/fragment_key_card" >
+        <action
+            android:id="@+id/action_keyCardFragment_to_addCardFragment"
+            app:destination="@id/addCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCardFragment"
+        android:name="com.abm.maasapp.ui.key.AddCardFragment"
+        android:label="fragment_add_card"
+        tools:layout="@layout/fragment_add_card" />
+</navigation>

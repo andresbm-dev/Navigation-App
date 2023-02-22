@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/baseline_account_circle_24"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/helpFragment2"
+            android:icon="@drawable/baseline_help_outline_24"
+            android:title="ayuda" />
+        <item
+            android:id="@+id/privacyFragment"
+            android:icon="@drawable/baseline_lock_24"
+            android:title="privacidad /legal" />
+
+        <item
+            android:id="@+id/deepLinkNetworks"
+            android:icon="@drawable/baseline_camera_alt_24"
+            android:title="Instagram" />
+
+        <item
+            android:id="@+id/closeSession"
+            android:icon="@drawable/baseline_sensor_door_24"
+            android:title="close sesion" />
+    </group>
+
+</menu>
