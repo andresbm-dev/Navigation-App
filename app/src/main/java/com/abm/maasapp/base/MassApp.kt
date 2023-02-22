@@ -1,4 +1,4 @@
-package com.abm.maasapp
+package com.abm.maasapp.base
 
 import android.annotation.SuppressLint
 import android.app.Application
