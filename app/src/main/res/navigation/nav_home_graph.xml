@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.abm.maasapp.ProfileFragment"
+        android:name="com.abm.maasapp.ui.home.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
